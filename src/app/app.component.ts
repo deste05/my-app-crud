@@ -32,8 +32,8 @@ export class AppComponent {
  }
  eliminar(){
    if(confirm('Estas seguro de eliminarlo?')){
-    
-    this.empleadoSeleccionado = new Empleados();
+     this.empleadosArray = this.empleadosArray.filter(x => x != this.empleadoSeleccionado)
+     this.empleadoSeleccionado = new Empleados();
    }
 }
     
